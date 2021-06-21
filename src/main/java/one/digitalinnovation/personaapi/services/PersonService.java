@@ -1,14 +1,14 @@
 package one.digitalinnovation.personaapi.services;
 
 import lombok.AllArgsConstructor;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
 import one.digitalinnovation.personaapi.dto.mapper.PersonMapper;
 import one.digitalinnovation.personaapi.dto.request.PersonDTO;
 import one.digitalinnovation.personaapi.dto.response.MessageResponseDTO;
 import one.digitalinnovation.personaapi.entities.Person;
 import one.digitalinnovation.personaapi.exception.PersonNotFoundException;
 import one.digitalinnovation.personaapi.repositories.PersonRepository;
-import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.stereotype.Service;
 
 import java.util.List;
 import java.util.stream.Collectors;
